@@ -4,7 +4,7 @@ services:
 - docker
 
 script:
-- docker build -t alanpeng/demo-atsea-sample-shop-app:$TRAVIS_BRANCH .
+- cd app && docker build -t alanpeng/demo-atsea-sample-shop-app:$TRAVIS_BRANCH .
 
 deploy:
   provider: script
